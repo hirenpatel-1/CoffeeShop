@@ -34,7 +34,7 @@ public class StoreController {
 		return storeList;
 	}
 
-	//Store details with the list of toys available in the store
+	//Store details with the list of Coffee available in the store
 	@GetMapping("/stores/{storeName}")
 	public List<Store> getStoreDetailsByStoreName(@PathVariable(value = "storeName") String storeName) {
 		List<Store> storeList = storeRepository.findByStoreName(storeName);
